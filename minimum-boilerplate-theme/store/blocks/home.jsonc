@@ -1,0 +1,314 @@
+// store/blocks/home.jsonc
+{
+  "store.home": {
+    "blocks": [
+      "list-context.image-list#demo",
+      "list-context.image-list#demo1",
+      "info-card#pixel",
+      "rich-text", 
+      "info-card#button-right", 
+      "info-card#button-left",
+      "shelf#home",
+      "flex-layout.row#one",
+      "responsive-layout.mobile#mobile",
+      "responsive-layout.desktop#desktop",
+      "modal-trigger#cupon",
+      "flex-layout.row#two"
+    ]
+  },
+
+  "list-context.image-list#demo": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 535,
+      "images": [
+        {
+          "image": "https://www.lojasmilla.com.br/arquivos/ids/158034/BANNER SITE PNG.png",
+          "description":"teste descrição banner 1",
+          "headline": "Black Friday",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://www.lojasmilla.com.br/arquivos/ids/156731/Banner-Principal-home-3.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://www.lojasmilla.com.br/arquivos/ids/158034/BANNER SITE PNG.png",
+          "description":"teste descrição banner 1",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://www.lojasmilla.com.br/arquivos/ids/158034/BANNER SITE PNG.png",
+          "description":"teste descrição banner 1",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+
+  "list-context.image-list#demo1": {
+    "children": ["slider-layout#demo-images1"],
+    "props": {
+      "height": 535,
+      "images": [
+        {
+          "image": "https://www.lojasmilla.com.br/arquivos/ids/158034/BANNER SITE PNG.png",
+          "description":"teste descrição banner 1",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://www.lojasmilla.com.br/arquivos/ids/156731/Banner-Principal-home-3.png",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://www.lojasmilla.com.br/arquivos/ids/158034/BANNER SITE PNG.png",
+          "description":"teste descrição banner 1",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        },
+        {
+          "image": "https://www.lojasmilla.com.br/arquivos/ids/158034/BANNER SITE PNG.png",
+          "description":"teste descrição banner 1",
+          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  },
+  //...,
+
+  "info-card#pixel": {
+    "props": {
+      "id":"infoCardPixel",
+      "isFullModeStyle": true,
+      "textPosition": "right",
+      "imageUrl": "assets/slide-1.jpg",
+      "headline": "slide nat",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#button-right": {
+    "props": {
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "headline": "Vintage ops 22",
+      "subhead": "Give your kitchen a boho style adding vintage apparels.<br>Available until January 2020.",
+      "callToActionMode": "button",
+      "callToActionText": "Explore",
+      "callToActionUrl": "/sale/d",
+      "textAlignment": "center"
+    }
+  },
+
+  "info-card#button-left": {
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-cinza-min.png",
+      "headline": "Shining chrome",
+      "subhead": "Give your kitchen a cool style adding warm metallic finishes.<br>Available until January 2020.",
+      "callToActionMode": "link",
+      "callToActionText": "Go to collection",
+      "textAlignment": "center"
+    }
+  },
+
+  "shelf#home":{
+     "blocks":["product-summary.shelf"],
+     "props":{
+       "orderBy":"OrderByTopSaleDESC",
+       "paginationDotsVisibility":"DesktopOnly",
+       "productLList":{
+         "maxItems":10,
+         "itemsPerPage":4,
+         "minItensPerPage":1,
+         "scroll":"BY_PAGE",
+         "arrows":true,
+         "titleText":"Mais Vendidos"
+
+       }
+     }
+  },
+
+  "flex-layout.row#one":{
+    "children": [
+      "info-card#col-left",
+      "flex-layout.col#col-right"
+    ]
+  },
+
+  "info-card#col-left":{
+    "props": {
+      "id": "infocardMacBook",  
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "isFullModeStyle":true,
+      "textPosition": "center",
+      "headline": "Cozinha",
+      "subhead": "Give your kitchen a boho style",
+      "callToActionMode": "button",
+      "callToActionText": "Mais informações",
+      "callToActionUrl": "#",
+      "textAlignment": "center",
+      "blockClass":"infoCardMac"
+    }
+  },
+
+  "flex-layout.col#col-right":{
+    "children": [
+      "info-card#col-right-1",
+      "info-card#col-right-2"
+    ]
+  },
+
+  "info-card#col-right-1":{
+    "props": {
+      "id":"infoCardTeste",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "headline": "Vintage aaa",
+      "subhead": "Give your kitchen",
+      "callToActionMode": "button",
+      "callToActionText": "Explore",
+      "callToActionUrl": "#",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#col-right-2":{
+    "props": {
+      "id":"infoCardTeste2",
+      "isFullModeStyle": false,
+      "textPosition": "right",
+      "imageUrl": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "headline": "Vintage natalia",
+      "subhead": "Give your kitchen",
+      "callToActionMode": "button",
+      "callToActionText": "Explore",
+      "callToActionUrl": "#",
+      "textAlignment": "center"
+    }
+  },
+  "responsive-layout.desktop#desktop":{
+    "children":["rich-text#desktop","image#desktop"]
+  },
+  "responsive-layout.mobile#mobile":{
+    "children":["rich-text#mobile","image#mobile"]
+  },
+  "rich-text#desktop":{
+    "props": {
+      "text": "### teu cafe \n ### delicioso",
+      "textPosition": "left",
+      "textAlignment": "left"
+    }
+  },
+  "rich-text#mobile":{
+    "props": {
+      "text": "### teu cafe \n ### bem gostoso",
+      "textPosition": "center",
+      "textAlignment": "center"
+    }
+  },
+
+  "image#desktop":{
+    "props": {
+      "src": "https://www.lojasmilla.com.br/arquivos/ids/156731/Banner-Principal-home-3.png",
+      "link":{
+        "url":"#"
+      },
+      "alt":"teste",
+      "maxwidth":"100%"
+    }
+  },
+  "image#mobile":{
+    "props": {
+      "src": "https://storecomponents.vteximg.com.br/arquivos/banner-principal-mobile.jpg",
+      "link":{
+        "url":"#"
+      },
+      "alt":"teste2",
+      "maxwidth":"100%"
+    }
+  },
+
+  "modal-trigger#cupon":{
+    "children":[
+      "rich-text#cupon",
+      "modal-layout#cupon"
+    ]
+  },
+  "rich-text#cupon":{
+    "props": {
+      "text": "Ver cupom",
+      "textPosition": "center",
+      "textAlignment": "center",
+      "font":"t-heading-3"
+    }
+  },
+  "modal-layout#cupon":{
+    "children":[
+      "rich-text#modal-content"
+    ]
+  },
+  "rich-text#modal-content":{
+    "props": {
+      "text": "Cupom : XXXX",
+      "textPosition": "center",
+      "textAlignment": "center",
+      "font":"t-heading-3"
+    }
+  },
+  "flex-layout.row#two":{
+    "children": ["image#image1", "image#image2","image#image3"]
+  },
+  "image#image1": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "storePrint"
+    }
+  },
+  "image#image2": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "storePrint"
+    }
+  },
+  "image#image3": {
+    "props": {
+      "src": "https://appliancetheme.vteximg.com.br/arquivos/cozinha-rosa-min.png",
+      "maxHeight": "",
+      "maxWidth": "",
+      "blockClass": "storePrint"
+    }
+  }
+
+
+
+}
